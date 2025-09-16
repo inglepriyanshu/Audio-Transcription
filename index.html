@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech-To-Text</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="upload-container">
+    <h1>Speech-To-Text</h1>
+    <input type="file" id="audioFile" accept=".wav,.mp3,.m4a"/>
+    <br>
+    <button id="uploadBtn">Upload & Transcribe</button>
+    <span class="status" id="status"></span>
+    <h2>Transcript:</h2>
+    <pre id="transcriptOutput"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

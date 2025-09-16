@@ -1,0 +1,9 @@
+testing_temp/
+
+stt_env/
+
+.vscode/
+
+__pycache__/
+
+.DS_Store
