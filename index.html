@@ -7,13 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="upload-container">
+  <div class="upload-container large" id="uploadContainer">
     <h1>Speech-To-Text</h1>
-    <input type="file" id="audioFile" accept=".wav,.mp3,.m4a"/>
-    <br>
-    <button id="uploadBtn">Upload & Transcribe</button>
+    <div class="drop-area" id="dropArea">
+      <p id="dropText">Upload or Drag a File here</p>
+      <input type="file" id="audioFile" accept=".wav,.mp3,.m4a" hidden/>
+      <div class="file-info hidden" id="fileInfo">
+        <span class="file-icon">🎵</span>
+        <span class="file-name" id="fileName"></span>
+      </div>
+    </div>
+    <button id="uploadBtn" disabled>Upload & Transcribe</button>
     <span class="status" id="status"></span>
-    <h2>Transcript:</h2>
+  </div>
+
+  <div class="transcript-section hidden" id="transcriptSection">
+    <h2>Transcript</h2>
     <pre id="transcriptOutput"></pre>
   </div>
 
